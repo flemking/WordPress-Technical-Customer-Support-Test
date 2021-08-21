@@ -3,16 +3,16 @@
 If the cache is still not cleared on the specified time, I could:
 
 - First, set up a real cron job
-  - Disable WP Cron
+  - Disable WP Cron:
   To disable it, I will add `define('DISABLE_WP_CRON', true);` the wp-config.php file.
 
   - Add the real Cron job entry through the web hosting control panelby typing this code in the Cron Job commande: `wget -q -O - http://clientdomainname.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1`
 
-- Check if any security plugin is blocking access to the site.
+- Check if any security plugin is blocking access to some important part of the site.
 
-- Add a **Preload** trigger inside the code (rocket-clean-custom.php)
+- Add a **Preload** trigger inside the uploaded code (rocket-clean-custom.php)
   - First, I will set the Cache Lifespan to 0
-  - Make sure that if the sitemap-based cache preloading is activated, the website have the Yoast SEO plugin installed or specified valide XML sitemap(s)
+  - Make sure that if the sitemap-based cache preloading is activated in the WP Rocket dashboard, the website have the Yoast SEO plugin installed or specified valide XML sitemap(s)
   - Make sure that the home page and the sitemap URLs are publicly reachable
   - Now I can add the following code inside the php file:
   

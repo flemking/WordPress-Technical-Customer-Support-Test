@@ -33,8 +33,10 @@ Paste the following code in your file:
 
 ### 3. Finaly we will create a cron job through your web hosting control panel
 
-**Select Cron Job in your Cpanel**
+#### Select Cron Job in your Cpanel
+
 ![Select Cron Job in your Cpanel](https://i.ibb.co/8zPWsfC/Select-Cron.png)
 
-**Set up the Cron Job**
+#### Set up the Cron Job using the file you just uploaded
+
 ![Set the cron job](https://i.ibb.co/ZHCpszZ/add-the-cron-job.png)
